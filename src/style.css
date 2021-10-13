@@ -1,0 +1,88 @@
+:root {
+  /* variables */
+  /* CSS HEX */
+  --midnight-green-eagle-green: #1a535cff;
+  --medium-turquoise: #4ecdc4ff;
+  --mint-cream: #f7fff7ff;
+
+  /* CSS HSL */
+  --midnight-green-eagle-green: hsla(188, 56%, 23%, 1);
+  --medium-turquoise: hsla(176, 56%, 55%, 1);
+  --mint-cream: hsla(120, 100%, 98%, 1);
+
+  /* others */
+  --def-font: sans-serif;
+}
+
+* {
+  /* padding and margin will be zero and the default font family is 'sans-serif' */
+  margin: 0;
+  padding: 0;
+  font-family: var(--def-font);
+}
+
+/* header */
+.header {
+  margin-top: 0;
+  background-color: var(--mint-cream);
+  padding: 20px 0 20px 0;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 12px 15px -8px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 12px 15px -8px rgba(0, 0, 0, 0);
+}
+.title-site {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  font-weight: 900;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
+/* main */
+.about-me {
+  background: url("../public/blue-flower.jpg") center center no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+
+/* title of the about me section */
+
+.about-me-title {
+  color: var(--mint-cream);
+  font-size: 4rem;
+  font-family: "ZCOOL KuaiLe", cursive;
+  padding-top: -100px;
+  display: inline;
+}
+
+span {
+  font-family: "Akronim", cursive;
+  font-size: 20rem;
+  display: inline;
+}
+
+.about-me-inner {
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+}
+.about-me-para {
+  display: block;
+  padding-top: -500px;
+  width: 95%;
+  color: var(--mint-cream);
+  font-size: 2rem;
+}
+
+ol > li {
+  color: var(--mint-cream);
+  font-size: 2rem;
+}
+li {
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+
+em {
+  color: crimson;
+}
