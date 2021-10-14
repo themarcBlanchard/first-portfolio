@@ -4,6 +4,7 @@
   --midnight-green-eagle-green: #1a535cff;
   --medium-turquoise: #4ecdc4ff;
   --mint-cream: #f7fff7ff;
+  --purple: #443874;
 
   /* CSS HSL */
   --midnight-green-eagle-green: hsla(188, 56%, 23%, 1);
@@ -19,8 +20,12 @@
   margin: 0;
   padding: 0;
   font-family: var(--def-font);
+  text-decoration: none;
 }
 
+a {
+  color: var(--mint-cream);
+}
 /* header */
 .header {
   margin-top: 0;
@@ -40,9 +45,18 @@
 
 /* main */
 .about-me {
-  background: url("../public/blue-flower.jpg") center center no-repeat;
+  background: url("../public/mini.jpg") center center no-repeat;
   background-size: cover;
   height: 50%;
+}
+
+.about-me-para::first-letter {
+  float: left;
+  padding-top: 0.1em;
+  padding-right: 0.1em;
+  color: #443874;
+  font-size: 5em;
+  line-height: 0.6em;
 }
 
 /* title of the about me section */
@@ -53,6 +67,19 @@
   font-family: "ZCOOL KuaiLe", cursive;
   padding-top: -100px;
   display: inline;
+  background: -webkit-linear-gradient(
+    to right,
+    #443874,
+    #8d84b6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #443874,
+    #8d84b6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.7;
 }
 
 span {
@@ -85,4 +112,61 @@ li {
 
 em {
   color: crimson;
+}
+
+/* contact */
+
+.wrapper {
+  margin-bottom: 100px;
+}
+.contact-container {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-header {
+  color: #443874;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "ZCOOL KuaiLe", cursive;
+  text-align: center;
+}
+
+.contact {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.contact-para {
+  font-family: var(--def-font);
+  font-size: 2rem;
+  color: var(--mint-cream);
+}
+
+i {
+  padding-left: 20px;
+}
+
+/* location styling */
+.location {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.location-title {
+  font-size: 2rem;
+  color: var(--purple);
+  font-weight: 900;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
 }
