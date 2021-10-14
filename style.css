@@ -45,7 +45,7 @@ a {
 
 /* main */
 .about-me {
-  background: url("../public/mini.jpg") center center no-repeat;
+  background: url("public/mini.jpg") center center no-repeat;
   background-size: cover;
   height: 50%;
 }
