@@ -3,9 +3,17 @@
   --black: #000;
   --white: #fff;
   --accent: #2d1e2f;
+  --sec-accent: #461220;
 
   /* font family */
   --def-font: sans-serif;
+}
+
+/* universal links : a */
+a {
+  color: var(--black);
+  text-decoration: underline;
+  font-style: italic;
 }
 
 /* universal selectors - give the whole page the margin and padding */
@@ -29,6 +37,7 @@
   text-align: left;
   font-family: "Varela Round", sans-serif;
   font-weight: 900;
+  color: var(--sec-accent);
 }
 
 .profile-img {
@@ -71,9 +80,81 @@ hr {
 }
 
 /* below is the styling for about me */
+article {
+  margin-bottom: 100px;
+}
 .article-header {
   text-align: center;
   font-size: 2rem;
   margin-top: 1.25rem;
-  text-decoration: underline;
+}
+
+#school-link:hover {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: blue;
+}
+
+i {
+  padding-left: 5px;
+  color: var(--white);
+}
+
+.ol-tags {
+  margin-top: 3.125rem;
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+.ol-tags li {
+  list-style-type: none;
+  display: inline-block;
+  color: var(--white);
+}
+
+/* below is the style for the contact me button */
+.contact-me {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 5px 20px 5px 20px;
+  border-radius: 15px;
+}
+
+.contact-me a {
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+address {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+iframe {
+  display: block;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+}
+
+.img-props {
+  height: 18.75rem;
+  width: 18.75rem;
+  float: left;
+}
+
+/* below are the code for media query - if it gets smaller than a phone or tablet */
+
+/* below is for tablet */
+@media (max-width: 810px) {
+  .img-props {
+    visibility: hidden;
+  }
+}
+
+/* below is for phone */
+@media (min-width: 428px) {
+  .img-props {
+    visibility: hidden;
+  }
 }
