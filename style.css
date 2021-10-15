@@ -24,7 +24,7 @@
 }
 
 a {
-  color: var(--mint-cream);
+  color: black;
 }
 /* header */
 .header {
@@ -43,20 +43,21 @@ a {
   font-family: "ZCOOL KuaiLe", cursive;
 }
 
+/* avatar styling */
+.avatar {
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  height: 300px;
+  width: 300px;
+}
 /* main */
 .about-me {
   background: url("public/mini.jpg") center center no-repeat;
   background-size: cover;
   height: 50%;
-}
-
-.about-me-para::first-letter {
-  float: left;
-  padding-top: 0.1em;
-  padding-right: 0.1em;
-  color: #443874;
-  font-size: 5em;
-  line-height: 0.6em;
 }
 
 /* title of the about me section */
@@ -82,10 +83,17 @@ a {
   opacity: 0.7;
 }
 
+main {
+  padding-bottom: 6%;
+}
 span {
   font-family: "Akronim", cursive;
   font-size: 20rem;
   display: inline;
+}
+
+p {
+  line-height: 2;
 }
 
 .about-me-inner {
@@ -98,16 +106,32 @@ span {
   padding-top: -500px;
   width: 95%;
   color: var(--mint-cream);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-ol > li {
+.more-intro {
   color: var(--mint-cream);
-  font-size: 2rem;
+  text-align: center;
+  display: block;
+  width: 95%;
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+
+ol li {
+  padding-top: -100px;
+  color: var(--mint-cream);
+  text-align: center;
+}
+
+ul > li {
+  color: var(--mint-cream);
 }
 li {
-  padding-left: 10%;
+  text-align: center;
   padding-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 em {
@@ -124,6 +148,8 @@ em {
   width: 80%;
   border-radius: 10px;
   text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .contact-header {
@@ -134,23 +160,24 @@ em {
   text-align: center;
 }
 
-.contact {
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: var(--purple);
+.contact-para {
+  color: black;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: inline-block;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }
 
-.contact-para {
-  font-family: var(--def-font);
-  font-size: 2rem;
-  color: var(--mint-cream);
+.contact-para:hover {
+  border-bottom: 3px solid black;
+  transform: scale(1.2);
 }
 
 i {
   padding-left: 20px;
+  color: black;
 }
 
 /* location styling */
@@ -168,5 +195,11 @@ i {
 
 iframe {
   display: block;
+  margin: 0 auto;
+}
+
+hr {
+  border-top: solid 5px crimson;
+  width: 50%;
   margin: 0 auto;
 }

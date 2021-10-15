@@ -13,20 +13,6 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="author" content="Marc Blanchard" />
     <!-- this is the cdn for Tailwind CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
-      integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/base.min.css"
-      integrity="sha512-AgpwKmVGEWojGWJ6C8MmiFMEh5wM7MOQFfrhlMRD466StBMqtP+JmYIOck+5GXFzD9bZ7RAIuppo+oHlIcXieg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +26,13 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/jpg" href="public/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- below is the site title that is inside thew semantic tag 'header' -->
@@ -50,6 +42,7 @@
     <!-- below is the about me asection, and it's inside a section semantic tag -->
     <!-- the section sematic tag is inside a 'main' semantic tag -->
     <main class="main">
+      <img class="avatar" src="public/avatar.jpg" alt="Avatar" />
       <section class="about-me">
         <div class="about-me-inner">
           <h2 class="about-me-title">me <span>.</span></h2>
@@ -58,38 +51,74 @@
             Engineer.<br />
             Every project that I tackle is done well mwith my all my might (like
             Thor). 🔨<br />
-            I have an affinity for every thing that looks futuristic, maybe that's why I'm a sucker for Sci-Fi movies.<br>
+            I have an affinity for every thing that looks futuristic, maybe
+            that's why I'm a sucker for Sci-Fi movies.<br />
             Here are my awesome traits:
-            <ol>
-                <li>Love watching Sci-Fi movies.</li>
-                <li>Big Fan of <em>Iron Man</em>(watched all the movies 5 times).</li>
-                <li>Love to learn new stuff</li>
-            </ol>
           </p>
+
+          <ul>
+            <li>Futurist.</li>
+            <li>Ambitious</li>
+            <li>Problem Solver</li>
+          </ul>
         </div>
+        <p class="more-intro">
+          With the skills that I will learn, I will be able to show the younger
+          generation the benefits of getting interested in Computer Science.<br />
+          Computer Science isn't the ultimate skills that I will learn. Here's
+          the top four:
+        </p>
+        <ol>
+          <li>Robotics Engineer</li>
+          <li>AR: Augmented Reality</li>
+          <li>Embedded Systems</li>
+          <li>Energy</li>
+        </ol>
       </section>
     </main>
     <!-- this is the last section -->
     <!-- this is the contact section -->
+    <hr />
     <div class="wrapper">
-        <div class="contact-container">
-            <h3 class="contact-header">Contact Me</h3>
-            <div class="contact">
-                <p class="contact-para"><a href="https://themarcBlanchard@github.com" alt="Github" title="Github" target="_blank">Github<i class="fab fa-github"></i></a></p>
-            </div><br>
-            <div class="contact">
-                <p class="contact-para"><a href="https://www.linkedin.com/in/marc-olivier-0191b0173/" alt="LinkedIn" title="LinkedIn" target="_blank">LinkedIn<i class="fab fa-linkedin"></i></a></p>
-            </div>
+      <div class="contact-container">
+        <h3 class="contact-header">Contact Me</h3>
+        <div class="contact">
+          <p class="contact-para">
+            <a
+              href="https://github.com/themarcBlanchard"
+              title="Github"
+              target="_blank"
+              >Github<i class="fab fa-github"></i
+            ></a>
+          </p>
         </div>
-        <div class="location">
-            <h2 class="location-title">Location: <br></h2>
-            <address>
-                151 Pixlee Place 
-                Bridgeport, CT 
-                06610
-            </address>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.4270733350036!2d-73.16252598433758!3d41.190661816130024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80c36740b8f6d%3A0xeefba869535e2a5a!2s151%20Pixlee%20Pl%2C%20Bridgeport%2C%20CT%2006610!5e0!3m2!1sen!2sus!4v1634176842802!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="true" loading="lazy"></iframe></p>
+        <br />
+        <div class="contact">
+          <p class="contact-para">
+            <a
+              href="https://www.linkedin.com/in/marc-olivier-0191b0173/"
+              title="LinkedIn"
+              target="_blank"
+              >LinkedIn<i class="fab fa-linkedin"></i
+            ></a>
+          </p>
         </div>
+      </div>
+      <hr />
+      <div class="location">
+        <h2 class="location-title">Location: <br /></h2>
+        <address>151 Pixlee Place Bridgeport, CT 06610</address>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.4270733350036!2d-73.16252598433758!3d41.190661816130024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80c36740b8f6d%3A0xeefba869535e2a5a!2s151%20Pixlee%20Pl%2C%20Bridgeport%2C%20CT%2006610!5e0!3m2!1sen!2sus!4v1634176842802!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </p>
+      </div>
     </div>
   </body>
 </html>
