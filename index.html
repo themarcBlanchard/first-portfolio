@@ -4,121 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marc Blanchard</title>
-    <meta name="description" content="Marc Blanchard biography" />
-    <meta
-      name="keywords"
-      content="marc, marc blanchard, blanchard, haitian developer, developers, haiti developers"
-    />
-    <link rel="stylesheet" href="style.css" />
     <meta name="author" content="Marc Blanchard" />
-    <!-- this is the cdn for Tailwind CSS -->
+    <meta name="description" content="A portfolio about Marc Blanchard" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akronim&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/jpg" href="public/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="shortcut icon" type="image/jpg" href="/public/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
   </head>
   <body>
-    <!-- below is the site title that is inside thew semantic tag 'header' -->
+    <!-- below is the header -->
     <header class="header">
-      <h1 class="title-site">Marc Blanchard</h1>
+      <div class="header-content">
+        <h1 id="title">Marc Blanchard</h1>
+        <img class="profile-img" src="public/avatar.jpg" alt="Avatar" />
+        <p class="sub-heading">
+          Hello 👋🏾 . I am a <span>Software Engineer</span><br />
+          I fell in love with coding, and my job is to make your ideas come
+          true.<br />
+          Coding is not my one and only skill. Here is the <em>list</em> of what
+          I can do for you:<br />
+        </p>
+        <!-- below is an unordered list that shows all of my skills -->
+        <ul class="ul-tag">
+          <li>UX/UI Design</li>
+          <li>Content Creator</li>
+          <li>Photographer</li>
+        </ul>
+      </div>
     </header>
-    <!-- below is the about me asection, and it's inside a section semantic tag -->
-    <!-- the section sematic tag is inside a 'main' semantic tag -->
-    <main class="main">
-      <img class="avatar" src="public/avatar.jpg" alt="Avatar" />
-      <section class="about-me">
-        <div class="about-me-inner">
-          <h2 class="about-me-title">me <span>.</span></h2>
-          <p class="about-me-para">
-            My name is Marc Blanchard and I am well practice Software
-            Engineer.<br />
-            Every project that I tackle is done well mwith my all my might (like
-            Thor). 🔨<br />
-            I have an affinity for every thing that looks futuristic, maybe
-            that's why I'm a sucker for Sci-Fi movies.<br />
-            Here are my awesome traits:
-          </p>
-
-          <ul>
-            <li>Futurist.</li>
-            <li>Ambitious</li>
-            <li>Problem Solver</li>
-          </ul>
-        </div>
-        <p class="more-intro">
-          With the skills that I will learn, I will be able to show the younger
-          generation the benefits of getting interested in Computer Science.<br />
-          Computer Science isn't the ultimate skills that I will learn. Here's
-          the top four:
-        </p>
-        <ol>
-          <li>Robotics Engineer</li>
-          <li>AR: Augmented Reality</li>
-          <li>Embedded Systems</li>
-          <li>Energy</li>
-        </ol>
-      </section>
-    </main>
-    <!-- this is the last section -->
-    <!-- this is the contact section -->
     <hr />
-    <div class="wrapper">
-      <div class="contact-container">
-        <h3 class="contact-header">Contact Me</h3>
-        <div class="contact">
-          <p class="contact-para">
-            <a
-              href="https://github.com/themarcBlanchard"
-              title="Github"
-              target="_blank"
-              >Github<i class="fab fa-github"></i
-            ></a>
-          </p>
-        </div>
-        <br />
-        <div class="contact">
-          <p class="contact-para">
-            <a
-              href="https://www.linkedin.com/in/marc-olivier-0191b0173/"
-              title="LinkedIn"
-              target="_blank"
-              >LinkedIn<i class="fab fa-linkedin"></i
-            ></a>
-          </p>
-        </div>
+    <!-- below is an about me section -->
+    <!-- default font family and size -->
+    <article class="article">
+      <div class="article-content">
+        <h2 class="article-header">About Me</h2>
       </div>
-      <hr />
-      <div class="location">
-        <h2 class="location-title">Location: <br /></h2>
-        <address>151 Pixlee Place Bridgeport, CT 06610</address>
-        <p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.4270733350036!2d-73.16252598433758!3d41.190661816130024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80c36740b8f6d%3A0xeefba869535e2a5a!2s151%20Pixlee%20Pl%2C%20Bridgeport%2C%20CT%2006610!5e0!3m2!1sen!2sus!4v1634176842802!5m2!1sen!2sus"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </p>
-      </div>
-    </div>
+    </article>
   </body>
 </html>

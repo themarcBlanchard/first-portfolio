@@ -1,205 +1,79 @@
 :root {
-  /* variables */
-  /* CSS HEX */
-  --midnight-green-eagle-green: #1a535cff;
-  --medium-turquoise: #4ecdc4ff;
-  --mint-cream: #fff;
-  --purple: #443874;
+  /* the colors below */
+  --black: #000;
+  --white: #fff;
+  --accent: #2d1e2f;
 
-  /* CSS HSL */
-  --midnight-green-eagle-green: hsla(188, 56%, 23%, 1);
-  --medium-turquoise: hsla(176, 56%, 55%, 1);
-  --mint-cream: hsla(120, 100%, 98%, 1);
-
-  /* others */
+  /* font family */
   --def-font: sans-serif;
 }
 
+/* universal selectors - give the whole page the margin and padding */
 * {
-  /* padding and margin will be zero and the default font family is 'sans-serif' */
   margin: 0;
   padding: 0;
-  font-family: var(--def-font);
-  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  box-sizing: border-box;
 }
 
-a {
-  color: black;
-}
-/* header */
-.header {
-  margin-top: 0;
-  background-color: var(--mint-cream);
-  padding: 20px 0 20px 0;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 12px 15px -8px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 12px 15px -8px rgba(0, 0, 0, 0);
-}
-.title-site {
-  font-size: 2rem;
+/* below is the styling for header */
+
+.header-content {
   margin: 0 auto;
   width: 80%;
-  font-weight: 900;
-  font-family: "ZCOOL KuaiLe", cursive;
-}
-
-/* avatar styling */
-.avatar {
-  border-radius: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 10%;
-  left: 45%;
-  height: 300px;
-  width: 300px;
-}
-/* main */
-.about-me {
-  background: url("public/mini.jpg") center center no-repeat;
-  background-size: cover;
-  height: 50%;
-}
-
-/* title of the about me section */
-
-.about-me-title {
-  color: var(--mint-cream);
-  font-size: 4rem;
-  font-family: "ZCOOL KuaiLe", cursive;
-  padding-top: -100px;
-  display: inline;
-  background: -webkit-linear-gradient(
-    to right,
-    #443874,
-    #8d84b6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #443874,
-    #8d84b6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 10px;
-  border-radius: 10px;
-  opacity: 0.7;
-}
-
-main {
-  padding-bottom: 6%;
-}
-span {
-  font-family: "Akronim", cursive;
-  font-size: 20rem;
-  display: inline;
-}
-
-p {
-  line-height: 2;
-}
-
-.about-me-inner {
-  margin: 0 auto;
-  width: 80%;
-  height: 50%;
-}
-.about-me-para {
-  display: block;
-  padding-top: -500px;
-  width: 95%;
-  color: var(--mint-cream);
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.more-intro {
-  color: var(--mint-cream);
-  text-align: center;
-  display: block;
-  width: 95%;
-  font-size: 1.5rem;
-  padding-bottom: 5%;
-}
-
-ol li {
-  padding-top: -100px;
-  color: var(--mint-cream);
-  text-align: center;
-}
-
-ul > li {
-  color: var(--mint-cream);
-}
-li {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-em {
-  color: crimson;
-}
-
-/* contact */
-
-.wrapper {
-  margin-bottom: 100px;
-}
-.contact-container {
-  margin: 0 auto;
-  width: 80%;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-.contact-header {
-  color: #443874;
-  font-size: 3rem;
-  font-weight: 900;
-  font-family: "ZCOOL KuaiLe", cursive;
-  text-align: center;
-}
-
-.contact-para {
-  color: black;
-  font-size: 2rem;
-  font-family: sans-serif;
-  font-weight: 500;
   padding-top: 20px;
-  padding-bottom: 20px;
-  display: inline-block;
-}
-
-.contact-para:hover {
-  border-bottom: 3px solid black;
-  transform: scale(1.2);
-}
-
-i {
-  padding-left: 20px;
-  color: black;
-}
-
-/* location styling */
-.location {
-  margin: 0 auto;
-  width: 80%;
   text-align: center;
 }
 
-.location-title {
-  font-size: 2rem;
-  color: var(--purple);
+#title {
+  text-align: left;
+  font-family: "Varela Round", sans-serif;
   font-weight: 900;
 }
 
-iframe {
-  display: block;
+.profile-img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+span {
+  font-family: monospace;
+}
+
+.sub-heading {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3.125rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/* below is the style for the unordered list */
+.ul-tag {
+  padding-top: 1.875rem;
+}
+.ul-tag li {
+  list-style-type: circle;
+  font-size: 1.5rem;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* horizontal line styling */
+hr {
+  border-top: 5px solid var(--accent);
+  width: 80%;
   margin: 0 auto;
 }
 
-hr {
-  border-top: solid 5px crimson;
-  width: 50%;
-  margin: 0 auto;
+/* below is the styling for about me */
+.article-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+  text-decoration: underline;
 }
